@@ -1,1 +1,1 @@
-read project
+Traning exercise on nested loops

@@ -1,31 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main-entry point
  *
- * Return: Always 0 (Success)
+ * Description: prints all possible combinations of two two-digit numbers
  *
+ * Return:0 success, non zero fail
  */
+
 int main(void)
 {
-	int b;
-	int m;
+	int i, j;
 
-	for (b = 0; b <= 99; b++)
+	for (i = 0; i < 99; i++)
 	{
-		for (m = b + 1; m <= 99; m++)
+		for (j = i + 1; j <= 99; j++)
 		{
-			putchar(b / 10 + '0');
-			putchar(b % 10 + '0');
-			putchar(' ');
-			putchar(m / 10 + '0');
-			putchar(m % 10 + '0');
+			putchar('0' + i / 10);
+			putchar('0' + i % 10);
 
-			if (!(b == 98 && m == 99))
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(' ');
+
+			putchar('0' + j / 10);
+			putchar('0' + j % 10);
+
+			if (i == 98 && j == 99)
+				break;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');

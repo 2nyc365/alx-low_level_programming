@@ -1,18 +1,20 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ *main-program entry point.
+ *Return:0 success, non zero error.
  */
 int main(void)
 {
-	int d;
+	int num;
 
-	for (d = '0'; d <= '9'; d++)
+	for (num = '0'; num <= '9'; num++)
 	{
-		putchar(d);
-		if (d != '9')
+		putchar(num);
+		if (num == '9')
+		{
+			break;
+		}
+		else
 		{
 			putchar(',');
 			putchar(' ');

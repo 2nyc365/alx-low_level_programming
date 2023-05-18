@@ -1,26 +1,28 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- *
+ * main-progrtam entry point
+ * Return:0 success, non zero fail
  */
 int main(void)
 {
-	int i, q, p;
+	int m, i, j;
 
-	for (i = 0; i <= 9; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (q = 0; q <= 9; q++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			for (p = 0; p <= 9; p++)
+			for (m = '0'; m <= '9'; m++)
 			{
-				if (p > q && q > i)
+				if (i < j && j < m)
 				{
-					putchar(i + '0');
-					putchar(q + '0');
-					putchar(p + '0');
-					if (i != 7 || q != 8 || p != 9)
+					putchar(i);
+					putchar(j);
+					putchar(m);
+					if (i == '7' && j == '8' && m == '9')
+					{
+						break;
+					}
+					else
 					{
 						putchar(',');
 						putchar(' ');
@@ -29,6 +31,7 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
+	putchar ('\n');
+				return (0);
 }
+

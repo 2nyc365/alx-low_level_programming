@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * _strcpy - Copies a string pointed to by @src, including the
- * terminating null byte, to a buffer pointed to by @dest.
- * @dest: Buffer to copy the string to.
- * @src: source string to copy
- *
- * Return: pointer to the destination @dest
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte, to the
+ * buffer pointed to by dest.
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -20,6 +20,5 @@ char *_strcpy(char *dest, char *src)
 			break;
 		count++;
 	}
-
 	return (dest);
 }

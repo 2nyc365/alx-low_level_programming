@@ -1,17 +1,16 @@
 #include <stdio.h>
-#include <unistd.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ *main-program entry point.
+ *Return:0 if no error, non zero if error.
+ **/
 int main(void)
 {
-	char ch;
+	char i;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(ch);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);

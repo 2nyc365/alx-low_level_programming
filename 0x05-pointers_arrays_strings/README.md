@@ -1,1 +1,1 @@
-task for pointers arrays strings
+pointersarraystrings

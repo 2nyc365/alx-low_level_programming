@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * reset_to_98 - takes a pointer to a parameter and resets its value.
- * @n: input integer
- * Return: nil
+ * reset_to_98-Resets the value of a variable back to 98.
+ * @n:Variable to be reset.
+ * Return:Void.
  */
+
 void reset_to_98(int *n)
 {
 	*n = 98;
